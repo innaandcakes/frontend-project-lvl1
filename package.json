@@ -16,5 +16,9 @@
     "url": "https://github.com/innaandcakes/frontend-project-lvl1/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/innaandcakes/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/innaandcakes/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "requirejs": "^2.3.6"
+  }
 }

@@ -14,12 +14,12 @@ const generateProgression = (firstProgressionNumber, progressionStep, progressio
 const generateRound = () => {
   const progressionLength = generateRandomInRange(5, 10);
   const firstProgressionNumber = generateRandomInRange(0, 20);
-  const progressionStep = generateRandomInRange(1, 3);
+  const progressionStep = generateRandomInRange(1, 5);
   const progression = generateProgression(firstProgressionNumber, progressionStep, progressionLength);
   const randomPosition = generateRandomInRange(0, progressionLength - 1);
   const answer = String(progression[randomPosition]);
-  const progressionWithGap = progression.splice(randomPosition, 1, '..');
-  const question = progressionWithGap.join(' ');
+  progression.splice(randomPosition, 1, '..');
+  const question = progression.join(' ');
   return [question, answer];
 };
 
